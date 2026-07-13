@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Data & Model Artifacts (generate from raw data / training) ────
+data/raw/
+data/processed/
+data/annotations/
+models/checkpoints/
+models/exported/
+models/onnx/
+models/tensorrt/
+outputs/
+logs/
+*.db
+
+# ── Keep test fixtures (small, committed for reproducibility) ────
+!tests/fixtures/

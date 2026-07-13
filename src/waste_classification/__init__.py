@@ -1,0 +1,1 @@
+"""waste-collection-detection package."""
