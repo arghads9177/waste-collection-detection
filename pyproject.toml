@@ -12,6 +12,8 @@ dependencies = [
     "pandas>=2.0",
     "scikit-learn>=1.9.0",
     "imagehash>=4.3.2",
+    "onnx>=1.22.0",
+    "onnxruntime>=1.27.0",
 ]
 
 [dependency-groups]
@@ -22,13 +24,10 @@ dev = [
 train = [
     "torch>=2.0.0",
     "torchvision>=0.15.0",
-    "onnx>=1.14",
-    "onnxruntime>=1.16",
 ]
 api = [
     "fastapi>=0.100",
     "uvicorn[standard]>=0.23",
-    "onnxruntime>=1.16",
 ]
 ui = [
     "streamlit>=1.28",

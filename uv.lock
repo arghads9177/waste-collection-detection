@@ -2208,6 +2208,8 @@ dependencies = [
     { name = "imagehash" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "onnx" },
+    { name = "onnxruntime" },
     { name = "pandas" },
     { name = "pillow" },
     { name = "pydantic-settings" },
@@ -2219,7 +2221,6 @@ dependencies = [
 [package.dev-dependencies]
 api = [
     { name = "fastapi" },
-    { name = "onnxruntime" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 dev = [
@@ -2227,8 +2228,6 @@ dev = [
     { name = "ruff" },
 ]
 train = [
-    { name = "onnx" },
-    { name = "onnxruntime" },
     { name = "torch" },
     { name = "torchvision" },
 ]
@@ -2240,6 +2239,8 @@ ui = [
 requires-dist = [
     { name = "imagehash", specifier = ">=4.3.2" },
     { name = "numpy", specifier = ">=1.24" },
+    { name = "onnx", specifier = ">=1.22.0" },
+    { name = "onnxruntime", specifier = ">=1.27.0" },
     { name = "pandas", specifier = ">=2.0" },
     { name = "pillow", specifier = ">=9.0" },
     { name = "pydantic-settings", specifier = ">=2.0" },
@@ -2251,7 +2252,6 @@ requires-dist = [
 [package.metadata.requires-dev]
 api = [
     { name = "fastapi", specifier = ">=0.100" },
-    { name = "onnxruntime", specifier = ">=1.16" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.23" },
 ]
 dev = [
@@ -2259,8 +2259,6 @@ dev = [
     { name = "ruff", specifier = ">=0.4" },
 ]
 train = [
-    { name = "onnx", specifier = ">=1.14" },
-    { name = "onnxruntime", specifier = ">=1.16" },
     { name = "torch", specifier = ">=2.0.0" },
     { name = "torchvision", specifier = ">=0.15.0" },
 ]
