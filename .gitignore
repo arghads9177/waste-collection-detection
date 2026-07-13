@@ -219,7 +219,7 @@ __marimo__/
 
 # ── Data & Model Artifacts (generate from raw data / training) ────
 data/raw/
-data/processed/
+data/processed/*
 data/annotations/
 models/checkpoints/
 models/exported/
@@ -231,3 +231,10 @@ logs/
 
 # ── Keep test fixtures (small, committed for reproducibility) ────
 !tests/fixtures/
+
+# ── Keep split CSVs (relative paths only, no images — lets Colab and
+#    local dev train/evaluate on the exact same split; TDD §3 portability) ──
+!data/processed/splits/
+data/processed/splits/*
+!data/processed/splits/*.csv
+!data/processed/splits/classes.txt
