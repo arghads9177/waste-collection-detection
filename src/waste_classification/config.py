@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     model_backbone: str = "efficientnet_b0"
     model_weights: str = "models/exported/waste-classifier-v1.pt"
     model_device: str = "auto"
+    model_image_size: int = 224
 
     # Training
     train_epochs: int = 50
